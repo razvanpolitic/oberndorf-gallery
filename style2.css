@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F6F5;
+  padding: 20px;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each category (if you want) */
+.row,
+.row > .category {
+  padding: 8px;
+}
+
+.category {
+  float: left;
+  width: 100%;
+  display: none; /* Hide categories by default */
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+#categories{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 45px 0 45px;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background-color:#F7F6F5;
+  cursor: pointer;
+  margin: 5px 0 5px 0;
+  color: #958C92;
+}
+
+/* Add a grey background color on mouse-over */
+.button:hover {
+  background-color: #f7f6f5f6;
+}
+
+/* Add a dark background color to the active button */
+.button.active {
+  border-bottom: 1px solid #2E1B2A; 
+  text-decoration: none;
+  background-color: #F7F6F5;
+  color: #2E1B2A;
+ /* background-color: #666;
+   color: white;*/
+}
+
+@media screen and (min-width: 560px) {
+  .category {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row{
+    align-self: center;
+    margin: 0 80px 0 100px;
+  }
+
+  #categories{
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+
+
+
